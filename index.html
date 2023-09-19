@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    background-color:darkslategrey ;
+  }
+    #container {
+  background-color: aqua;
+  width: 355px;
+  height: 490px;
+  margin: 50px 109px 156px 187px;
+  border-radius: 43px;
+  margin: 16px 109px 17px 415px;
+}
+    #container1{
+        width: px;
+        /* background-color: black; */
+        height: 100px;
+        color: #ca9329;
+        font-size: 30px;
+        margin-left: 104px;
+        /* background-color: blueviolet; */
+        /* margin-left: 10px; */
+        border-radius: 43px 43px 0px 0px ;
+        margin-bottom: -11px;
+        
+    }
+    #button1 {
+  background-color: blanchedalmond;
+  color: blue;
+  width: 59px;
+  height: 62px;
+  border-radius: 100px;
+}   #container2 {
+  margin-top: 7px;
+  margin-left: 44px;
+}
+#lastbutton1{
+    width: 122px;
+    height: 30px;
+    margin-top: 10px;
+
+}
+#lastbutton2{
+    width: 122px;
+    height: 30px;
+    margin-top: 10px;
+
+}
+#row2{
+    margin-top: -5px;
+}
+#row3{
+    margin-top: 13px;
+}
+#row4{
+    margin-top: 20px;
+}
+#row5{
+    margin-top: -5px;
+}
+/* #container{
+    display: flex; */
+
+/* } */
+#inputScreen{
+
+    width: 216px;
+height: 57px;
+margin-right: 74px;
+margin-left: 64px;
+margin-top: -74px;
+}
+</style>
+<body>
+    
+    <div id="container">
+
+            <div id="container1"> calculator </div>
+            <input type="text" id="inputScreen" >
+        <div id="container2">
+    <div id="row1"><button id="button1"  onclick="document.querySelector('#inputScreen').value += '7'" >7 </button>
+      <button id="button1" value="8" onclick="document.querySelector('#inputScreen').value += '8'">8</button>
+      <button id="button1" onclick="document.querySelector('#inputScreen').value += '9'">9</button>
+      <button id="button1" onclick="  document.querySelector('#inputScreen').value = document.querySelector('#inputScreen').value.toString().slice(0,-1); ">DEL</button> </div><br>
+      <div id="row2">
+        <button id="button1" onclick="document.querySelector('#inputScreen').value += '4'">4</button>
+      <button id="button1" onclick="document.querySelector('#inputScreen').value += '5'">5</button>
+      <button id="button1" onclick="document.querySelector('#inputScreen').value += '6'">6</button>
+      <button id="button1"  onclick="document.querySelector('#inputScreen').value += '+'">+</button><br></div>
+      <div id="row3">
+        <button id="button1" onclick="document.querySelector('#inputScreen').value += '1'">1</button>
+      <button id="button1" onclick="document.querySelector('#inputScreen').value += '2'">2</button>
+      <button id="button1" onclick="document.querySelector('#inputScreen').value += '3'">3</button>
+      <button id="button1" onclick="document.querySelector('#inputScreen').value += '-'">-</button><br></div>
+      <div id="row4">
+        <button id="button1" onclick="document.querySelector('#inputScreen').value  += '.'">.</button>
+      <button id="button1" onclick="document.querySelector('#inputScreen').value += '0'">0</button>
+      <button id="button1" onclick="document.querySelector('#inputScreen').value += '/'">/</button>
+      <button id="button1" onclick="document.querySelector('#inputScreen').value += '*'">*</button><br></div>
+      <div id="row5">
+         <button id="lastbutton1" onclick="document.querySelector('#inputScreen').value = ''">RESET</button>
+      <button id="lastbutton2" onclick="document.querySelector('#inputScreen').value = eval(document.querySelector('#inputScreen').value) ">= </button> 
+    </div>
+
+
+
+    </div>
+</body>
+</html>
